@@ -1,0 +1,116 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+<link rel="stylesheet" href="fawesome/css/font-awesome.min.css">
+    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/styles.css" rel="stylesheet" type="text/css" />
+<style type="text/css">
+    .style1
+    {
+        color: #FFFFFF;
+    }
+    .style2
+    {
+        width: 386px;
+    }
+    .style3
+    {
+        font-size: 14pt;
+        color: #FFFFFF;
+    }
+</style>
+<script src="js/jquery-1.7.1.min.js"></script>
+
+<link href="dropdown.css" media="screen" rel="stylesheet" type="text/css" />
+<link href="themes/default.advanced.css" media="screen" rel="stylesheet" type="text/css" />
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+
+
+    <form id="form1" runat="server" autocomplete="off">
+    <div>
+        <div class="navcontainer">
+	<div class="container"><div id="logo">
+    <table><tr valign="middle" align="left"><td> &nbsp;</td>
+                <td>
+                <h1>
+                       CabMY</tr></table>
+        </div>
+    <div class="sidemenu">
+   <table>
+   <tr>
+   <td class="style1">
+   Welcome
+   </td>
+   <td class="style2">
+       &nbsp;
+       <asp:Label ID="Label1" runat="server" Text="Label" ForeColor="White"></asp:Label>&nbsp;<asp:LinkButton 
+           ID="LinkButton1" runat="server" onclick="LinkButton1_Click" 
+           CausesValidation="False">Login</asp:LinkButton>&nbsp;
+       <asp:LinkButton ID="LinkButton2" runat="server" onclick="LinkButton2_Click" 
+           CausesValidation="False">Sign up</asp:LinkButton>&nbsp;
+       <asp:LinkButton ID="LinkButton5" runat="server" onclick="LinkButton5_Click" 
+           Visible="False" CausesValidation="False">Admin Home</asp:LinkButton>
+&nbsp;<asp:LinkButton ID="LinkButton4" runat="server" onclick="LinkButton4_Click" 
+           Visible="False" CausesValidation="False">My Bookings</asp:LinkButton>
+       &nbsp;
+       <asp:LinkButton ID="LinkButton3" runat="server" onclick="LinkButton3_Click" 
+           CausesValidation="False">Sign out</asp:LinkButton>
+       </td>
+   </tr>
+   </table>
+   
+   </div>
+    </div>
+    
+    
+</div>
+<header id="header">
+    	<div class="container">
+        <div id="mainNav">
+        	<ul class="dropdown dropdown-horizontal" style="background-color: #FFFFFF">
+	<li><a href="./" class="dir" style="background-color: #FFFFFF">Home</a>
+		
+	</li>
+	<li><a href="booking.aspx" style="background-color: #FFFFFF">Book Cab</a></li>
+
+
+	<li><a href="aboutus.aspx" class="dir" style="background-color: #FFFFFF">About Us</a>
+		
+	</li>
+	
+	
+	
+</ul>
+	<div class="clearfloat" style="background-color: #FFFFFF"></div>
+</div>
+        </div>
+        <br class="clearfloat" />
+    </header>
+<div class="container">
+    
+    <section>
+    	
+ <div class="container">
+ <br />
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+         </div>
+        
+    </section>
+</div>
+    </div>
+    </form>
+
+    <p>
+        </p>
+
+</body>
+</html>

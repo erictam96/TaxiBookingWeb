@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="Payment" Class="DataClasses1DataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="WebSettings" ConnectionString="Data Source=(LocalDB)\v11.0;AttachDbFilename=|DataDirectory|\Payment.mdf;Integrated Security=True" SettingsObjectName="System.Configuration.ConfigurationManager.ConnectionStrings" SettingsPropertyName="PaymentConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.Billing" Member="Billings">
+    <Type Name="Billing">
+      <Column Name="CreditCardNo" Type="System.String" DbType="NChar(20)" CanBeNull="true" />
+      <Column Name="Bank" Type="System.String" DbType="NChar(30)" CanBeNull="true" />
+      <Column Name="CardHolderName" Type="System.String" DbType="NChar(30)" CanBeNull="true" />
+      <Column Name="BillingAddress1" Type="System.String" DbType="NChar(30)" CanBeNull="true" />
+      <Column Name="BillingAddress2" Type="System.String" DbType="NChar(30)" CanBeNull="true" />
+      <Column Name="Town" Type="System.String" DbType="NChar(30)" CanBeNull="true" />
+      <Column Name="Country" Type="System.String" DbType="NChar(35)" CanBeNull="true" />
+      <Column Name="Postcode" Type="System.String" DbType="NChar(30)" CanBeNull="true" />
+      <Column Name="ContactNo" Type="System.String" DbType="NChar(15)" CanBeNull="true" />
+      <Column Name="Email" Type="System.String" DbType="NChar(40)" CanBeNull="true" />
+      <Column Name="BookingNo" Type="System.String" DbType="NChar(20) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+    </Type>
+  </Table>
+</Database>
